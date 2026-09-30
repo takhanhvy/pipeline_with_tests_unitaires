@@ -16,8 +16,11 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Installer pytest
-        run: pip install pytest
+      - name: Installer les outils
+        run: pip install pytest mypy
+
+      - name: Vérifier le typage
+        run: mypy lib.py
 
       - name: Lancer les tests
         run: pytest -v

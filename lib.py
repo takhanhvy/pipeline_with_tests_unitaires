@@ -1,2 +1,7 @@
 def average(values: list):
-    return sum(values) / 2 #/ len(values)
+    return sum(values) / len(values)
+
+def add(n1: int, n2: int):
+    return n1 + n2
+
+print(add("2", 2))
